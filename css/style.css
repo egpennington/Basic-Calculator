@@ -22,9 +22,9 @@ span {
   text-decoration: underline;
   text-decoration-style: double;
 }
-.txt-lg {
-  font-size: 2rem;
-}
+.txt-lg { font-size: 2rem; }
+.txt-sm { font-size: 0.7rem; }
+.alert { color: red; }
 
 .btn {
   text-transform: uppercase;
@@ -42,6 +42,18 @@ span {
   color: #fff;
 }
 
+.btn-dark {
+  background: #333;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.btn-dark:hover {
+  background: #fff;
+  color: #333;
+}
+
 .numbers {
   display: flex;
   justify-content: center;
@@ -56,6 +68,10 @@ span {
 }
 
 /*  Footer =============== */
+.scrimba-logo {
+  background: #fff;
+  height: 11px;
+}
 .footer {
   display: flex;
   justify-content: space-around;
@@ -86,4 +102,12 @@ span {
 .footer .right ul li:hover,
 .footer .right ul li a:hover {
   color: #ffd60a;
+}
+
+@media(max-width: 415px) {
+  .footer .right ul {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
 }

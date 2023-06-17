@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Basic Calculator</title>
+  <title>Basic Accounting Calculator</title>
 </head>
 <body>
 <div class="container">
-  <h1 class="ul">Basic Calculator</h1>
+  <h1 class="ul">Accounting Error Calculator</h1>
+  <h3>Are your debit and credits off?</h3>
   <div class="container">
     <div class="numbers">
       <span class="ul txt-lg" id="number1-el"></span>
@@ -24,8 +25,12 @@
     </div> <!-- buttons -->
     
     <div class="total">
-    <span id="total-el" class="txt-lg uld">Sum: </span>
+    <span id="total-el" class="txt-lg uld">Sum: </span><br><br>
+    <span id="message-el" class="alert"></span>
     </div> <!-- total --> 
+    <br><br>
+    <button id="reload-el" class="btn btn-dark">Reload Page<br>
+      <span class="txt-sm">double click</span></button>
   </div> <!-- container -->
   
   </div> <!-- container -->
@@ -36,11 +41,11 @@
     </div>
     <div class="right">
       <ul>
-        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-        <li>Download</li>
-        <li>Docs</li>
-        <li>Privacy</li>
-        <li>Terms of Service</li>
+        <li><a href="https://twitter.com/" alt="twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://www.facebook.com/" alt="facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+        <li><a href="https://www.youtube.com/" alt="youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+        <li><a href="https://www.linkedin.com/" alt="linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://scrimba.com/" target="_blank"><img class="scrimba-logo" src="image/scrimba_logo.png" alt="scrimba logo"> Scrimba</a></li>
       </ul>
     </div>  
   </div>
