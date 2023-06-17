@@ -11,6 +11,7 @@ const division = document.getElementById("division-el")
 const multiplication = document.getElementById("multiplication-el")
 const total = document.getElementById("total-el")
 const message = document.getElementById("message-el")
+const message2 = document.getElementById("message2-el")
 
 if (sumCheck % 9 === 0 && sumCheck % 2 === 0) {
     message.textContent = "Possible error: due to transposition, or credit/debit posted backwards"
@@ -18,6 +19,8 @@ if (sumCheck % 9 === 0 && sumCheck % 2 === 0) {
     message.textContent = "Possible error: due to transposition"
  } else if (sumCheck % 2 === 0) {
     message.textContent = "Possible error: credit/debit posted backwards"
+ } else {
+    message2.textContent = "No error detected"
  }
 
 addition.addEventListener("click", function() {

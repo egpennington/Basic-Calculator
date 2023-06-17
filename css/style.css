@@ -25,6 +25,7 @@ span {
 .txt-lg { font-size: 2rem; }
 .txt-sm { font-size: 0.7rem; }
 .alert { color: red; }
+.good { color: green; }
 
 .btn {
   text-transform: uppercase;
