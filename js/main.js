@@ -13,7 +13,9 @@ const total = document.getElementById("total-el")
 const message = document.getElementById("message-el")
 const message2 = document.getElementById("message2-el")
 
-if (sumCheck % 9 === 0 && sumCheck % 2 === 0) {
+if (num1 - num2 === 0) {
+    message2.textContent = "Debit and Credit balance"
+} else if (sumCheck % 9 === 0 && sumCheck % 2 === 0) {
     message.textContent = "Possible error: due to transposition, or credit/debit posted backwards"
  } else if (sumCheck % 9 === 0) {
     message.textContent = "Possible error: due to transposition"
