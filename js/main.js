@@ -1,9 +1,11 @@
-let num1 = prompt("Enter a credit")
-let num2 = prompt("Enter debit")
-let sumCheck = JSON.parse(num1 - num2)
-document.getElementById("number1-el").textContent = num1
-document.getElementById("number2-el").textContent = num2
+let num1
+let num2
+let sumCheck
+let number1El = document.getElementById("number1-el")
+let number2El = document.getElementById("number2-el")
+document.getElementById("number2-el").textContent
 let reload = document.getElementById("reload-el")
+let start = document.getElementById("start-el")
 
 const addition = document.getElementById("addition-el")
 const subtraction = document.getElementById("subtraction-el")
@@ -13,17 +15,26 @@ const total = document.getElementById("total-el")
 const message = document.getElementById("message-el")
 const message2 = document.getElementById("message2-el")
 
-if (num1 - num2 === 0) {
-    message2.textContent = "Debit and Credit balance"
-} else if (sumCheck % 9 === 0 && sumCheck % 2 === 0) {
-    message.textContent = "Possible error: due to transposition, or credit/debit posted backwards"
- } else if (sumCheck % 9 === 0) {
-    message.textContent = "Possible error: due to transposition"
- } else if (sumCheck % 2 === 0) {
-    message.textContent = "Possible error: credit/debit posted backwards"
- } else {
-    message2.textContent = "No error detected"
- }
+start.addEventListener("click", function() {
+    num1 = prompt("Enter a debit")
+    num2 = prompt("Enter credit")
+    number1El.textContent = "Credit: " + num1
+    number2El.textContent = "Debit: " + num2
+    let sumCheck = num1 - num2
+
+    if (sumCheck == 0) {
+        message2.textContent = "Debit and Credit balance"
+    } else if (sumCheck % 9 === 0 && sumCheck % 2 === 0) {
+        message.textContent = "Possible error: due to transposition, or credit/debit posted backwards"
+     } else if (sumCheck % 9 === 0) {
+        message.textContent = "Possible error: due to transposition"
+     } else if (sumCheck % 2 === 0) {
+        message.textContent = "Possible error: credit/debit posted backwards"
+     } else {
+        message2.textContent = "No error detected"
+     }
+})
+
 
 addition.addEventListener("click", function() {
     let result = +num1 + +num2

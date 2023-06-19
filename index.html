@@ -6,17 +6,25 @@
   <meta name="description" content="check for accounting errors of transpo or backwards posting">
   <meta name="keywords" content="HTML, CSS, javascript, scrimba, per harold borgen, accounting, accounting errors, Calculator, addition, subtraction, division, multiplication">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
   <title>Basic Accounting Calculator</title>
 </head>
 <body>
 <div class="container">
+  <div class="nav-bar">
+    <ul>
+      <li class="active"><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="/about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+      <li><a href="https://www.fasb.org/" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> FASB</a></li>
+    </ul>
+  </div>
   <h1 class="ul">Accounting Error Calculator</h1>
   <h3>Are your debit and credits off?</h3>
   <div class="container">
     <div class="numbers">
-      <span class="ul txt-lg" id="number1-el"></span>
-      <span class="ul txt-lg" id="number2-el"></span>
+      <span class="ul txt-lg" id="number1-el">Debit: </span>
+      <span class="ul txt-lg" id="number2-el">Credit: </span>
     </div> <!-- number -->
     
     <div class="buttons">
@@ -27,13 +35,16 @@
     </div> <!-- buttons -->
     
     <div class="total">
-    <span id="total-el" class="txt-lg uld">Sum: </span><br><br>
-    <span id="message-el" class="alert"></span>
-    <span id="message2-el" class="good"></span>
+      <span id="total-el" class="txt-lg uld">Sum: </span><br><br>
+      <span id="message-el" class="alert"></span>
+      <span id="message2-el" class="good"></span>
     </div> <!-- total --> 
     <br><br>
-    <button id="reload-el" class="btn btn-dark">Reload Page<br>
-      <span class="txt-sm">double click</span></button>
+    <div class="buttons-bottom">
+      <button id="start-el" class="btn btn-light">Start</button>
+      <button id="reload-el" class="btn btn-dark">Reset<br>
+        <span class="txt-sm">double click</span></button>
+    </div>
   </div> <!-- container -->
   
   </div> <!-- container -->

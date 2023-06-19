@@ -9,6 +9,33 @@ body {
   text-align: center;
 }
 
+.container .nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .nav-bar ul li { 
+  list-style: none;
+  margin: 8px;
+  background: #742ff6;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.container .nav-bar ul li:hover { opacity: 0.7; }
+.container .nav-bar ul li:active { box-shadow: none; }
+
+
+.container .nav-bar ul li a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.container .nav-bar ul li a {
+  text-decoration: none;
+}
 .container h1 { padding: 20px 0; }
 
 /* utilities */
@@ -26,6 +53,13 @@ span {
 .txt-sm { font-size: 0.7rem; }
 .alert { color: red; }
 .good { color: green; }
+.active { box-shadow: 2px 2px #333; }
+
+.buttons-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .btn {
   text-transform: uppercase;
@@ -41,6 +75,20 @@ span {
 .btn:hover {
   background: #333;
   color: #fff;
+}
+
+.btn-light {
+  background: #fff;
+  color: green;
+  padding: 16px 20px;
+  border: 1px green solid;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.btn-light:hover {
+  background: green;
+  color: #fff;  
 }
 
 .btn-dark {
@@ -66,6 +114,18 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+/* About styles */
+.about {
+  max-width: 600px;
+  margin: 15px auto;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about a:hover {
+  color: #742ff6;
+  font-weight: bold'
 }
 
 /*  Footer =============== */
@@ -110,5 +170,9 @@ span {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+  }
+
+  .buttons-bottom{ 
+    flex-direction: column;
   }
 }
