@@ -50,6 +50,7 @@ span {
   text-decoration-style: double;
 }
 .txt-lg { font-size: 2rem; }
+.txt-med { font-size: 0.9rem; }
 .txt-sm { font-size: 0.7rem; }
 .alert { color: red; }
 .good { color: green; }
